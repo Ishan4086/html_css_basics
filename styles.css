@@ -1,0 +1,185 @@
+*{ /*Universal selector*/
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(174,174,174);
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+header{
+    display:flex;
+    width:100%;   /*relatice width*/
+    height:4rem;  /*relatice height*/
+    /*height:200px;/*fixed value*/
+    
+    background-color: white;
+    /*CSS short hand*/
+
+    justify-content: space-around;
+    align-items: center;
+}    
+main{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+
+}
+
+section{
+    display:flex;
+    width:100%;   /*relatice width*/
+    height:30rem;  /*relatice height*/
+    /*height:200px;/*fixed value*/
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+aside{
+    display:flex;
+    width:100%;
+    height:30rem;
+    background-color: white;
+    flex-direction: column;
+    padding-left: 1rem;
+
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height:4rem;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+}
+
+form input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    border:1px solid rgb(157, 157, 157);
+}
+
+form button{
+    width: 20%;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(153, 67, 234);
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+form button:hover{
+    background-color: rgb(185, 127, 239);;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+form input::placeholder{
+    font-size: 1.2rem;
+}
+
+.logo{
+    display: flex;
+    background-color: rgb(153, 67, 234);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.brand{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav ul li:first-child{  /*pseudo class*/
+    font-weight: bold;
+}
+
+ol{
+    font-size: 1.5rem;
+    list-style-type: upper-roman;
+}
+
+dl{
+    font-size: 1.5rem;
+}
+
+dt {
+    font-weight: bold;
+    display: inline;
+    margin: 0;
+}
+
+dd {
+    display: inline;
+    margin: 0;
+}
+
+dd::after { /*pseudo element*/
+    content: "\A";
+    white-space: pre;
+}
+
+td, th, tr{
+    border: 1px solid black !important;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.box_model{
+    display: flex;
+    gap: 0;
+}
+
+.box_model h2{
+    margin-bottom: 0;
+}
+
+.box{
+    margin: 3rem;
+    width: 40%;
+    height: 20rem;
+    border: 1px solid black;
+    padding: 3rem;
+}
+
+
+
+
+
+
+/*CSS BOX MODDEL*/
